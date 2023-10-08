@@ -52,7 +52,7 @@
 ## 👨‍💻 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#116](https://github.com/webraptor/react-native-deck-swiper/pull/116) in [webraptor/react-native-deck-swiper](https://github.com/webraptor/react-native-deck-swiper)
+1. 🗣 Commented on [#39893](https://github.com/facebook/react-native/pull/39893#issuecomment-1750648549) in [facebook/react-native](https://github.com/facebook/react-native)
 <!--END_SECTION:activity-->
 
 <br>
