@@ -52,7 +52,7 @@
 ## 👨‍💻 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#39893](https://github.com/facebook/react-native/pull/39893#issuecomment-1750648549) in [facebook/react-native](https://github.com/facebook/react-native)
+1. 🗣 Commented on [#7801](https://github.com/wix/react-native-navigation/pull/7801#issuecomment-1767956305) in [wix/react-native-navigation](https://github.com/wix/react-native-navigation)
 <!--END_SECTION:activity-->
 
 <br>
