@@ -1,0 +1,89 @@
+schema: spec-driven
+
+# Project context (optional)
+# Add only constraints that should guide OpenSpec artifacts and workflows.
+# Include constraints an agent cannot infer by reading the code.
+# Keep general project documentation and discoverable codebase facts out.
+# Example:
+#   context: |
+#     Designs and tasks must cover Windows, macOS, and Linux
+#     Write all artifacts in Spanish
+
+# Per-artifact rules (optional)
+# Add custom rules for specific artifacts.
+# Example:
+#   rules:
+#     proposal:
+#       - Keep proposals under 500 words
+#       - Always state what is out of scope
+#     tasks:
+#       - Break tasks into chunks of max 2 hours
+
+# Per-operation guidance (optional)
+# Add advisory guidance for how apply and archive work should be conducted.
+# This is separate from artifact rules above.
+# Example:
+#   operations:
+#     apply:
+#       guidance:
+#         - Keep test summaries concise
+#     archive:
+#       guidance:
+#         - Summarize the archive outcome before finishing
+
+context: |
+  Roadmap (openspec-kit): a session's explore ends in steps in openspec/ROADMAP.md, never
+  in a proposal; work taken now is a step too, built by roadmap-run as a run of that one
+  step. The old conditions decide how the work divides into steps: part of the input
+  decides for a feature that does not exist yet (that part becomes a step where it is
+  first used), a question cannot be answered in the conversation and needs research,
+  facts or a prototype (a research step first), decisions chain — B can be discussed
+  only once A is settled and seen working (A now, B a later step), or OpenSpec's
+  right-size signs fire. The architect of a run still explores and proposes its own step.
+  Explore offers the steps to the user — change name, Depends (`<change>@<repo>` for a step of another roadmap), Goal, Decide
+  (the user's decisions the step leaves open, by the rule below, or `—` when there are none),
+  Hands, Waits (only the owner's hands; an external event — when there are any) — and after a yes
+  writes them in the format of the file's header.
+  Explore (openspec-kit): explore opens with the list of the decisions it needs, each
+  with its default and the reason for it; the user accepts the list whole or edits single
+  lines. A decision is the user's only when nothing in the specs, the ADRs in force or the
+  research grounds it and it is not a technical one; every other decision explore takes
+  itself, naming its ground. The user's decisions are written in the project's language of
+  cases — the people and situations of its glossary, what a person does and sees, with no
+  API fields, routes or column names. A question with options (AskUserQuestion) is asked
+  only for a decision where no default holds.
+
+# >>> openspec-kit: ADR and roadmap step closing
+rules:
+  design:
+    - "Before the decisions, read adr/README.md and the in-force records in adr/ (a
+      record is in force while no later record's Status supersedes it). Only
+      in-force records constrain this design; one that needs revisiting is named
+      under Open Questions."
+    - "A decision that commits the project long term, affects future changes and is
+      not captured by an in-force record — or knowingly diverges from one — is
+      written as a new adr/NNNN-kebab-title.md in the format of adr/README.md; a
+      revision is a new record whose Status supersedes the old one, the old file is
+      never edited.
+      Tactical details are not records; when nothing meets the bar, none is written."
+    - "design.md ends with «## ADR»: the in-force records it relied on and the records
+      it created or superseded, or «none»."
+  tasks:
+    - "A task's verification carries the command and its output on today's tree,
+      pasted from a run made while writing the task; the expected result is what that
+      same command prints once the task is done."
+    - "tasks.md opens with `## Context`: the spec requirements, code files, test helpers
+      and fixtures, and ADRs the implementer reads — it starts from the change folder
+      and this list, not from the repository."
+
+operations:
+  archive:
+    guidance:
+      - "When openspec/ROADMAP.md has a step named like this change: delete the step
+        block and commit the roadmap together with the archive — unless the archive is
+        committed on the step's own branch that ends in a pull request: then the block
+        stays, and after the merge `roadmap-run` removes it on the work branch."
+      - "Sync and move with `openspec archive <name> -y`: the deltas are whole
+        requirement blocks, the CLI merges them into the main specs and moves the
+        change in one step; then `openspec validate --specs`."
+# <<< openspec-kit
