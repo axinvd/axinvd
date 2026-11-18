@@ -41,4 +41,7 @@ Decide: —
 
 ## Follow-ups
 
+- CV files say «contributed a fix» for react/react-native#39893, which GitHub shows as closed but facebook-github-bot merged into facebook/react-native@265af222: write «merged fix» in `cv/cv-en.md` and `cv/ai-experience.md` §1 — from profile-readme — repo `freelance_leads` (`~/projects/freelance_leads/cv/`).
+- Pinned repositories of the profile are changed by the owner by hand: `axinvd.github.io`, `recall`, the `react-native` fork, `icomoon-helper`, `react-native-scrollview-maintain`; the README names tg-flow, fathom and the harness (private) without links, and making tg-flow public and pinning it is the owner's option — from profile-readme (PR #1, «Waiting for you»).
+
 ## Candidates (user decides)
