@@ -41,7 +41,8 @@ Decide: —
 
 ## Follow-ups
 
-- CV files say «contributed a fix» for react/react-native#39893, which GitHub shows as closed but facebook-github-bot merged into facebook/react-native@265af222: write «merged fix» in `cv/cv-en.md` and `cv/ai-experience.md` §1 — from profile-readme — repo `freelance_leads` (`~/projects/freelance_leads/cv/`).
-- Pinned repositories of the profile are changed by the owner by hand: `axinvd.github.io`, `recall`, the `react-native` fork, `icomoon-helper`, `react-native-scrollview-maintain`; the README names tg-flow, fathom and the harness (private) without links, and making tg-flow public and pinning it is the owner's option — from profile-readme (PR #1, «Waiting for you»).
+- The CV files name one upstream contribution as «contributed a fix»; the owner has three merged: react/react-native#39893 (GitHub shows it closed, facebook-github-bot merged it in facebook/react-native@265af222), wix/react-native-navigation#7801 (Android 14), webraptor/react-native-deck-swiper#116. Say «merged» and name all three in `cv/cv-en.md`, `cv/linkedin.md`, `cv/ai-experience.md` §1 — from profile-readme — repo `freelance_leads` (`~/projects/freelance_leads/cv/`).
+- Pinned repositories of the profile are set by the owner by hand: `axinvd.github.io`, `recall`, the `react-native` fork, the `react-native-navigation` fork (optional fifth: `react-native-deck-swiper`); `icomoon-helper`, `react-native-scrollview-maintain`, `icomoon-cli` are archived and stay out; making private tg-flow public and pinning it is the owner's option — from profile-readme (PR #1, «Waiting for you»).
+- The profile README keeps no counts that need upkeep (commits, PRs, lines, tests); the `cv-site` step should follow the same rule on the site — from profile-readme — repo `axinvd.github.io`.
 
 ## Candidates (user decides)
