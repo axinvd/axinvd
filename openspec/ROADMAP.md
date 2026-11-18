@@ -30,15 +30,6 @@ blockers by what they unblock.
 
 ## Steps
 
-### profile-readme
-Depends: —
-Read: `~/projects/freelance_leads/cv/cv-en.md`, `~/projects/freelance_leads/cv/ai-experience.md`
-Goal: страница профиля github.com/axinvd за десять секунд говорит, кто это и куда смотреть: AI product + фронтенд-инженер, сайт-резюме, живые проекты.
-Scope: `README.md` профиля, собранный когда-то генератором (danielcranney/readme-generator): гифка, «a kind person», ссылка на Google Doc как портфолио, иконки навыков, которых в работе нет (Swift, Rust, Kotlin, Bootstrap…), соцсети с устаревшими (CodePen, CodeSandbox, Facebook, Instagram), сторонние счётчики (github-readme-stats на vercel, streak на herokuapp — падают). Новый — короткий: строка позиционирования, 3–5 пунктов о работе с цифрами из `cv/ai-experience.md`, стек текстом, ссылки на сайт `https://axinvd.github.io`, caro.md, infodreamhome.com, LinkedIn и почту; без сторонних счётчиков и картинок с чужих доменов. По-английски. Закреплённые репозитории профиля (pinned) меняет владелец руками — шаг предлагает какие.
-Out: сайт-резюме (`cv-site`, соседний репо `axinvd.github.io`).
-Done when: README профиля отрисован на github.com/axinvd без битых картинок, в светлой и тёмной теме, на телефоне (390); ссылка на сайт ведёт на `https://axinvd.github.io`.
-Decide: —
-
 ## Follow-ups
 
 - The CV files name one upstream contribution as «contributed a fix»; the owner has three merged: react/react-native#39893 (GitHub shows it closed, facebook-github-bot merged it in facebook/react-native@265af222), wix/react-native-navigation#7801 (Android 14), webraptor/react-native-deck-swiper#116. Say «merged» and name all three in `cv/cv-en.md`, `cv/linkedin.md`, `cv/ai-experience.md` §1 — from profile-readme — repo `freelance_leads` (`~/projects/freelance_leads/cv/`).
