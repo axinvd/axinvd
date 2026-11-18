@@ -10,15 +10,16 @@ engineer, and the CV site `https://axinvd.github.io` carries that title.
 
 ## What Changes
 
-- `README.md` is rewritten in English and short: a name, one positioning line (AI product &
-  frontend engineer), five bullets about the work with numbers taken only from
-  `~/projects/freelance_leads/cv/ai-experience.md`, the stack as text, and links to the CV site,
-  caro.md, infodreamhome.com, LinkedIn and the email.
+- `README.md` is rewritten in English and short, in the first person: who he is in two sentences,
+  the projects as short stories (what the project is, what he did, what is interesting about it),
+  the open-source work (`recall` and the fixes merged upstream), one line on the earlier career,
+  the stack as text, and links to the CV site, caro.md, infodreamhome.com, LinkedIn and the email.
+- No figure that someone would have to keep in sync: no commit, PR, line, test or year counts.
 - Removed: the gif, the Google Doc portfolio link, all skill and social icons (images from
   raw.githubusercontent.com of a foreign repo), the socials CodePen, CodeSandbox, Facebook,
-  Instagram, X, and the github-readme-stats / streak cards.
-- No images at all: nothing on the page loads from another domain.
-- Pinned repositories are changed by the owner by hand; the step proposes which in the pull request.
+  Instagram, X, and the github-readme-stats / streak cards. No images at all.
+- Pinned repositories are changed by the owner by hand; the step proposes which in the pull request,
+  from the public repos that are not archived.
 
 ## Capabilities
 
