@@ -30,16 +30,6 @@ blockers by what they unblock.
 
 ## Steps
 
-### profile-v2-sync
-Depends: —
-Read: `~/projects/freelance_leads/cv/ai-experience.md` (v2 — подходы); README.md
-Goal: README профиля сходится с ресёрчем подходов v2 — сильное не упущено, ничего не противоречит.
-Scope: сверить пункты README («Things I've built», «In the open») с записями v2; добавить то, что сильнее нынешних формулировок, поправить расхождения; подача прежняя — подходы, без счётчиков активности, коротко. Список «добавлено / не взято и почему» — в PR.
-Out: сайт (`axinvd.github.io`), закреплённые репозитории (владелец закрепил).
-Done when: в PR список сверки с v2; README отрисован на github.com/axinvd без битых ссылок, в светлой и тёмной теме, на телефоне (390).
-Decide: —
-
-
 ## Follow-ups
 
 - The CV files name one upstream contribution as «contributed a fix»; the owner has three merged: react/react-native#39893 (GitHub shows it closed, facebook-github-bot merged it in facebook/react-native@265af222), wix/react-native-navigation#7801 (Android 14), webraptor/react-native-deck-swiper#116. Say «merged» and name all three in `cv/cv-en.md`, `cv/linkedin.md`, `cv/ai-experience.md` §1 — from profile-readme — repo `freelance_leads` (`~/projects/freelance_leads/cv/`).
