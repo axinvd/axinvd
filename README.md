@@ -1,7 +1,7 @@
 # Ivan Alexandrov
 
 I'm an AI product & frontend engineer. I build web products in React and Next.js for clients, and
-I build the agent tooling I make them with. I work remotely from Chișinău, Moldova.
+my own agent tooling for Claude Code. I work remotely from Chișinău, Moldova.
 
 ### Things I've built
 
@@ -12,18 +12,27 @@ I build the agent tooling I make them with. I work remotely from Chișinău, Mol
   exchange rates.
 - **[infodreamhome.com](https://infodreamhome.com)**: the site of a Las Vegas general contractor.
   I built most of it. Every page is prerendered and fast on a phone, quote requests land in the
-  owner's inbox, and search engines get structured data about the business.
+  owner's inbox, and search engines get structured data about the business. Only a production
+  build lets search engines in, so a forgotten setting hides a test copy instead of exposing it.
 - **An agent harness** (private): how I ship software with Claude Code. Each roadmap step gets
   its own orchestrator, which leads an architect, a tester, an implementer, a designer and a fresh
-  verifier. The tester writes tests from the spec without seeing the code, and nothing merges
-  until I approve it on GitHub.
-- **tg-flow** (private): lets my studio work with those agents from a Telegram chat. A request
-  becomes a roadmap step through an MCP server I wrote, and a second agent checks the step before
-  it lands. The bot acts on GitHub as its own app, never as me. It is tested against prompt
-  injection on the live model.
+  verifier, each in a context of its own. No agent checks its own work: the tester writes tests
+  from the spec without seeing the code, and the verifier runs commands instead of reading the
+  builder's report. My answers go back to the agent that asked, and nothing merges until I approve
+  it on GitHub.
+- **tg-flow** (private): lets my studio work with those agents from a Telegram chat. The chat
+  agent has no shell, only a few allowed tools, and it writes a request as a step through an MCP
+  server I wrote, only after a second agent checks it. It reads pages people send, so it reaches
+  only its project and is tested against prompt injection on the live model. On GitHub the bot
+  acts as its own app, so I can approve its work, and it never falls back to my account.
 - **fathom** (private, in progress): personal finance and bill splitting, built solo with agents.
-  Every split must balance to zero, and receipt scans read by a model are validated like
-  untrusted input.
+  Every split must balance to zero, and balances are computed from the ledger on every read, never
+  stored, so they cannot drift. A fiscal receipt's QR code is parsed by code; only a photo goes to a
+  model, and its answer is validated like untrusted input.
+- **A lead-research tool** (private): ranks the freelance leads and job posts that reach me and
+  finds the real vacancy behind a thin post. The model only reads: it copies facts as written and
+  points at pages, and code fetches the pages and computes the score, so the same post always
+  scores the same. I chose the model by measuring candidates against answers I checked by hand.
 
 ### In the open
 
