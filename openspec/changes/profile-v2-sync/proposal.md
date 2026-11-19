@@ -16,7 +16,8 @@ show how the owner works with models, are not on the profile.
 - Approaches added from v2, one sentence each, inside the existing bullets: infodreamhome.com keeps
   search engines out unless the build is production (R1.3); the harness keeps every agent from
   checking its own work and sends an answer back to the agent that asked (R2.1, Q3.3, R2.2); tg-flow's
-  chat agent has only the tools of his MCP server and reaches only its project
+  chat agent has no shell, only a few allowed tools, writes steps through his MCP server, and
+  reaches only its project
   (R3.1, R4.4); fathom derives balances on every read and parses fiscal receipts by code (R1.1, Q2.3).
 - One new bullet: the private lead-research tool, where the model only reads and points and code
   computes, and its model was chosen by measuring against hand-checked answers (Q2.1, Q2.2, Q4.1, R7.2).

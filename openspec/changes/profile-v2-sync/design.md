@@ -32,8 +32,9 @@ v2, as a sentence about what the approach does and why. The page stays about as 
   stays, plus the fresh verifier that checks by running commands), and «an answer goes back to the
   agent that asked instead of restarting the step». Ground: v2 R2.1, Q3.3, R2.2. The merge on my
   Approve stays (R8.2).
-- D4. tg-flow: the chat agent has no shell, only a few tools of my MCP server, and a request becomes
-  a step only after a format check and a second agent's check pass (R3.1, R7.1). The GitHub line is
+- D4. tg-flow: the chat agent has no shell, only a few allowed tools (R4.4: the four tools of my MCP
+  server, WebSearch, WebFetch and a read-only researcher subagent), and it writes a request as a
+  step through my MCP server only after a second agent's check passes (R3.1, R7.1). The GitHub line is
   corrected: «acts as its own app, so I can approve its work, and it never falls back to my account»,
   in v2's own words (R4.2: a failed App token «never falls back to the owner»; where the App is not
   installed it does run as the owner, so «never as me» overstated it). The prompt-injection line gets
@@ -85,7 +86,7 @@ why. It is D1–D8 in a reader's words.
 
 ## Risks / Trade-offs
 
-- [The page grows by one bullet and about five sentences, from 391 to 565 words by `wc -w`] → each
+- [The page grows by one bullet and about five sentences, from 391 to 569 words by `wc -w`] → each
   project still holds one short paragraph, and the shape is unchanged; the owner can strike a
   sentence in review.
 - [The lead-research tool names a job search on a public profile] → the CV site already shows lead

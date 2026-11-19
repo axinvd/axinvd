@@ -21,10 +21,10 @@ my own agent tooling for Claude Code. I work remotely from Chișinău, Moldova.
   builder's report. My answers go back to the agent that asked, and nothing merges until I approve
   it on GitHub.
 - **tg-flow** (private): lets my studio work with those agents from a Telegram chat. The chat
-  agent has no shell, only the tools of an MCP server I wrote, and a request becomes a step only
-  after a second agent checks it. It reads pages people send, so it reaches only its project and
-  is tested against prompt injection on the live model. On GitHub the bot acts as its own app, so
-  I can approve its work, and it never falls back to my account.
+  agent has no shell, only a few allowed tools, and it writes a request as a step through an MCP
+  server I wrote, only after a second agent checks it. It reads pages people send, so it reaches
+  only its project and is tested against prompt injection on the live model. On GitHub the bot
+  acts as its own app, so I can approve its work, and it never falls back to my account.
 - **fathom** (private, in progress): personal finance and bill splitting, built solo with agents.
   Every split must balance to zero, and balances are computed from the ledger on every read, never
   stored, so they cannot drift. A fiscal receipt's QR code is parsed by code; only a photo goes to a
